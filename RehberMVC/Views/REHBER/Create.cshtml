@@ -1,10 +1,10 @@
 ﻿@model Rehber.Entity.KisiListesi
-@{ 
+@{
     ViewData["Title"] = "Create";
 }
 <h1 style="color:cornflowerblue">Create</h1>
 <h4>Kişi Listesi</h4>
-<hr />  
+<hr />
 <div class="row">
     <div class="col-md-4">
         <form action="Create">
@@ -33,3 +33,7 @@
 <div>
     <a asp-action="Index">Listeye Geri Dön</a>
 </div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
