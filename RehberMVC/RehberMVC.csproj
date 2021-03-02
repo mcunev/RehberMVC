@@ -25,6 +25,7 @@
 
   <ItemGroup>
     <Folder Include="Identity\" />
+    <Folder Include="FakeData\" />
   </ItemGroup>
 
 </Project>
