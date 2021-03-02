@@ -7,6 +7,8 @@ namespace RehberDataAcces.Abstract
 {
     public interface IKisiListesiDal:IRepository<KisiListesi>
     {
-        void DeleteFromKisiListesi(int id);
+       
+
+
     }
 }

@@ -20,7 +20,6 @@
   <ItemGroup>
     <ProjectReference Include="..\Rehber.Business\Rehber.Business.csproj" />
     <ProjectReference Include="..\Rehber.Entity\Rehber.Entity.csproj" />
-    <ProjectReference Include="..\RehberDataAcces\RehberDataAcces.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Rehber.Business.Concrete;
+using RehberDataAcces.Concrete;
 namespace RehberMVC.Controllers
 {
     public class REHBERController : Controller
@@ -19,7 +20,7 @@ namespace RehberMVC.Controllers
         public IActionResult Index()
         {
             var result = kisi.GetAll();
-            return View();
+            return View(result);
         }
 
         [HttpPost]
@@ -35,10 +36,11 @@ namespace RehberMVC.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult Edit(string ad, string Aciklama)
+        public IActionResult Update(int id)
         {
-
+            object p = kisi.GetById(id);
             return View();
         }
+       
     }
 }

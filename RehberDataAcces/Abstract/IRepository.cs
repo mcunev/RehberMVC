@@ -15,7 +15,7 @@ namespace RehberDataAcces.Abstract
         void Delete(TEntity entity);
 
 
-
+        void DeleteByID(int id);
         TEntity GetById(int ID);
 
         //Todo: Buraya bakilacak
