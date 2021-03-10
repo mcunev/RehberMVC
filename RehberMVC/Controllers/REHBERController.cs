@@ -47,18 +47,9 @@ namespace RehberMVC.Controllers
         }
        public IActionResult Details(int id) 
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-            else
-            {
                 var adListesi = kisi.GetById(id);
-                if (adListesi == null)
-                {
-                    return NotFound();
-                }
-            }
+                return View(adListesi);
+            
         }
 
         [HttpPost]
