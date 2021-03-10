@@ -22,10 +22,7 @@ namespace Rehber.Business.Concrete
             db.Delete(entity);
         }
 
-        public void DeleteFromKisiListesi(int id)
-        {
-            db.DeleteByID(id);
-        }
+       
 
         public List<KisiListesi> GetAll()
         {

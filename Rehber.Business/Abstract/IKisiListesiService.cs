@@ -11,7 +11,7 @@ namespace Rehber.Business.Abstract
         void Insert(KisiListesi entity);
         void Update(KisiListesi entity);
         void Delete(KisiListesi entity);
-        void DeleteFromKisiListesi(int id);
+       
         List<KisiListesi> GetAll();
     }
 }
